@@ -57,6 +57,14 @@ build CMakeFiles\ESCTest.dir\main.cpp.obj: CXX_COMPILER__ESCTest_unscanned_Debug
   TARGET_COMPILE_PDB = CMakeFiles\ESCTest.dir\
   TARGET_PDB = ESCTest.pdb
 
+build CMakeFiles\ESCTest.dir\List.cpp.obj: CXX_COMPILER__ESCTest_unscanned_Debug D$:\NETO$ advan$ prog$ C++\3\1\List.cpp || cmake_object_order_depends_target_ESCTest
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I"D:\NETO advan prog C++\3\1\catch2\src\catch2\.." -I"D:\NETO advan prog C++\3\1\out\build\x64-Debug\catch2\generated-includes"
+  OBJECT_DIR = CMakeFiles\ESCTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\ESCTest.dir
+  TARGET_COMPILE_PDB = CMakeFiles\ESCTest.dir\
+  TARGET_PDB = ESCTest.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ESCTest
@@ -65,7 +73,7 @@ build CMakeFiles\ESCTest.dir\main.cpp.obj: CXX_COMPILER__ESCTest_unscanned_Debug
 #############################################
 # Link the executable ESCTest.exe
 
-build ESCTest.exe: CXX_EXECUTABLE_LINKER__ESCTest_Debug CMakeFiles\ESCTest.dir\main.cpp.obj | catch2\src\Catch2d.lib catch2\src\Catch2Maind.lib catch2\src\Catch2d.lib || catch2\src\Catch2Maind.lib catch2\src\Catch2d.lib
+build ESCTest.exe: CXX_EXECUTABLE_LINKER__ESCTest_Debug CMakeFiles\ESCTest.dir\main.cpp.obj CMakeFiles\ESCTest.dir\List.cpp.obj | catch2\src\Catch2d.lib catch2\src\Catch2Maind.lib catch2\src\Catch2d.lib || catch2\src\Catch2Maind.lib catch2\src\Catch2d.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = catch2\src\Catch2d.lib  catch2\src\Catch2Maind.lib  catch2\src\Catch2d.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
